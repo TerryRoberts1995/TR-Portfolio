@@ -1,8 +1,18 @@
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // Dark mode background color
 $dark-mode-bg-color: #202020;
 
-// Accent color for outlines
-$accent-color: #8a4fff;
+// Primary Accent color for outlines
+$accent-color: #a76aff;
+
+// Secondary Accent color for outlines
+$lilac-accent-color: #b581ff;
 
 // Text color
 $text-color: #f7f7f7;
