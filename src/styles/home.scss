@@ -26,13 +26,8 @@
     width: 80%;
     height: 500px;
     border-radius: 10px;
-    border: 1px solid transparent;
+    border: 1px solid $accent-color;
     padding: 50px;
-    transition: border-color 1s;
-
-    &.animate-border {
-      animation: fadeInBorder 1s;
-    }
 
     .content-box-one,
     .content-box-two {
@@ -72,11 +67,6 @@
   }
 
   &:hover {
-    .content-section {
-      border-color: $lilac-accent-color;
-      animation: fadeInBorder 3s ease-in-out;
-    }
-
     .content-box-one,
     .content-box-two {
       border-color: $lilac-accent-color;
@@ -111,6 +101,6 @@
     border-color: transparent;
   }
   to {
-    border-color: $lilac-accent-color;
+    border-color: $accent-color;
   }
 }
