@@ -5,6 +5,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  padding-bottom: 50px;
+  padding-top: 25px;
 
   .header-container {
     @include flex-center;
@@ -28,6 +31,7 @@
     border-radius: 10px;
     border: 1px solid $accent-color;
     padding: 50px;
+    margin: 0;
 
     .content-box-one,
     .content-box-two {
@@ -64,12 +68,58 @@
         color: $text-color;
       }
     }
+
+    .content-box-two {
+      border: 1px solid transparent !important;
+    }
   }
 
   &:hover {
     .content-box-one,
     .content-box-two {
       border-color: $lilac-accent-color;
+    }
+  }
+
+  .one {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-top: 25px;
+  }
+
+  .two {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 25px;
+  }
+
+  .parallax-section {
+    height: 500px;
+    width: 85.2%;
+    position: relative;
+    border: 1px solid $accent-color;
+
+    .parallax-bg {
+      width: 100%;
+      background-image: url("../images/drone-2.jpg");
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .parallax-content {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .parallax-text {
+        color: $text-color;
+        font-size: 2rem;
+      }
     }
   }
 }

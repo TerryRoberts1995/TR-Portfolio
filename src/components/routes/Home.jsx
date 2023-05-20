@@ -19,10 +19,10 @@ const Home = () => {
   return (
     <div className="page-container">
       <div className="header-container">
-        <h1 className="header">Hello World!</h1>
+        <h1 className="header">Let me Introduce myself.</h1>
       </div>
 
-      <div className={`content-section`}>
+      <div className={`content-section one`}>
         <div
           className={`content-box-one ${
             animate ? "animate-slide-from-left" : ""
@@ -51,24 +51,36 @@ const Home = () => {
             animate ? "animate-slide-from-right" : ""
           }`}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          beatae fugit, facere, aspernatur neque cupiditate unde fuga ullam
-          quidem quasi maxime voluptatum. Dolores, iure ad?
+          <p className="borderless">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            beatae fugit, facere, aspernatur neque cupiditate unde fuga ullam
+            quidem quasi maxime voluptatum. Dolores, iure ad?
+          </p>
         </div>
       </div>
 
-      <div className={`content-section`}>
+      <div className={`parallax-section`}>
+        <div className="parallax-bg"></div>
+        <div className="parallax-content">
+          <p className="parallax-text">Toast-R</p>
+        </div>
+      </div>
+
+      <div className={`content-section two`}>
         <div
-          className={`content-box-one ${
+          className={`content-box-two ${
             animate ? "animate-slide-from-left" : ""
           }`}
         >
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore odit
-          quo expedita rerum praesentium error fugit.
+          <p className="borderless">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            beatae fugit, facere, aspernatur neque cupiditate unde fuga ullam
+            quidem quasi maxime voluptatum. Dolores, iure ad?
+          </p>
         </div>
 
         <div
-          className={`content-box-two ${
+          className={`content-box-one ${
             animate ? "animate-slide-from-right" : ""
           }`}
         >
