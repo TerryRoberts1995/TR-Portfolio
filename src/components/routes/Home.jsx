@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/home.scss";
 import DronePhoto from "../../images/drone-1.jpg";
+import DronePhoto2 from "../../images/drone-4.jpg";
 
 const Home = () => {
   const [animate, setAnimate] = useState(false);
@@ -8,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setAnimate(true);
-    }, 0);
+    }, 500);
 
     return () => {
       clearTimeout(timer);
@@ -71,15 +72,21 @@ const Home = () => {
             animate ? "animate-slide-from-right" : ""
           }`}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-          exercitationem voluptas perferendis fugit laboriosam dolore qui
-          reiciendis? Molestiae saepe ducimus dignissimos impedit aliquid quis
-          iure corporis repellendus ipsa perferendis dicta repellat, hic quos
-          maiores adipisci, illo suscipit necessitatibus dolor iusto, quod ipsam
-          distinctio. Eaque facilis dolorem suscipit ipsa. Eum illum cum,
-          veritatis cumque quisquam ea aliquid voluptates, odio ex, magnam dicta
-          minus nemo. Et dolore ea vitae doloremque adipisci, incidunt sunt
-          dolores necessitatibus illo quos!
+          <p className="content-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            exercitationem voluptas perferendis fugit laboriosam dolore qui
+            reiciendis? Molestiae saepe ducimus dignissimos impedit aliquid quis
+            iure corporis repellendus ipsa perferendis dicta repellat, hic quos
+            maiores adipisci, illo suscipit necessitatibus dolor iusto, quod
+            ipsam distinctio. Eaque facilis dolorem suscipit ipsa. Eum illum
+            cum, veritatis cumque quisquam ea aliquid voluptates, odio ex,
+            magnam dicta minus nemo. Et dolore ea vitae doloremque adipisci,
+            incidunt sunt dolores necessitatibus illo quos!
+          </p>
+
+          <div className="image-box">
+            <img src={DronePhoto2} alt="Description of the image" />
+          </div>
         </div>
       </div>
     </div>
