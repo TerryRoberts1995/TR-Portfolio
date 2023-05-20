@@ -1,3 +1,47 @@
-h1 {
-  color: red;
+@import "./variables";
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header {
+    color: $text-color;
+    border: 2px solid $accent-color;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: $dark-mode-bg-color;
+  }
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+
+  .content-box-one,
+  .content-box-two {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: $box-bg-color;
+    padding: 2rem;
+    width: 80%;
+
+    .image-box {
+      flex: 0 0 50%;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .text-box {
+      flex: 0 0 50%;
+      color: $text-color;
+    }
+  }
 }
